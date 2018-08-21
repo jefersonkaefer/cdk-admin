@@ -29,7 +29,7 @@ export const menus = [
     sub: [
       {
         name: "Lista de Compras",
-        link: "home/market-list",
+        link: "market/list",
         icon: "shopping_basket",
         chip: false,
         open: false

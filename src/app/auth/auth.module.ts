@@ -25,6 +25,7 @@ import { DashboardCrmModule } from "../dashboard-crm/dashboard-crm.module";
 
 import { CoreModule } from "../core/core.module";
 import { HomeModule } from "../home/home.module";
+import { MarketModule } from "../market/market.module";
 
 @NgModule({
   imports: [
@@ -38,7 +39,8 @@ import { HomeModule } from "../home/home.module";
     CoreModule,
     MatSidenavModule,
     PerfectScrollbarModule,
-    HomeModule
+    HomeModule,
+    MarketModule
   ],
   declarations: [AuthComponent],
   providers: [

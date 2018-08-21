@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { HomeRouterModule } from "./home.router";
+import { MarketRouterModule } from "./market.router";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatTabsModule } from "@angular/material/tabs";
@@ -27,8 +27,8 @@ import {
 import * as hljs from "highlight.js";
 import { HighlightJsModule, HIGHLIGHT_JS } from "angular-highlight-js";
 import * as hljsTypescript from "highlight.js/lib/languages/typescript";
-import { TasksComponent } from "./tasks/tasks.component";
-///lkkkkkk
+import { ListComponent } from "./list/list.component";
+
 import { DndModule } from "ng2-dnd";
 import { MatCardModule } from "@angular/material";
 export function highlightJsFactory(): any {
@@ -64,7 +64,7 @@ export function highlightJsFactory(): any {
       provide: HIGHLIGHT_JS,
       useFactory: highlightJsFactory
     }),
-    HomeRouterModule,
+    MarketRouterModule,
     CommonModule,
     DndModule.forRoot(),
     FormsModule,
@@ -73,8 +73,8 @@ export function highlightJsFactory(): any {
     MatListModule,
     MatCardModule
   ],
-  declarations: [TasksComponent],
+  declarations: [ListComponent],
 
-  exports: [TasksComponent]
+  exports: [ListComponent]
 })
-export class HomeModule {}
+export class MarketModule {}

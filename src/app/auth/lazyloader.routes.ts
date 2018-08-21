@@ -14,6 +14,7 @@ export const appRoutes: Routes = [
           "../material-widgets/material-widgets.module#MaterialWidgetsModule"
       },
       { path: "home", loadChildren: "../home/home.module#HomeModule" },
+      { path: "market", loadChildren: "../market/market.module#MarketModule" },
       { path: "maps", loadChildren: "../maps/maps.module#MapsModule" },
       { path: "charts", loadChildren: "../charts/charts.module#ChartsModule" },
       // { path: 'chats', loadChildren: '../chats/chat.module#ChatsModule' }, // fix this
